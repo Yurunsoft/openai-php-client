@@ -73,7 +73,7 @@ final class CreateResponse implements ResponseContract, ResponseHasMetaInformati
                 static fn (CreateResponseChoice $result): array => $result->toArray(),
                 $this->choices,
             ),
-            'usage' => $this->usage->toArray(),
+            'usage' => $this->usage?->toArray(),
         ];
     }
 }
